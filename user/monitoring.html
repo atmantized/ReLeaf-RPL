@@ -4,113 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReLeaf Monitoring</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #d6e8d5;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .points {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-        }
-        .total-points {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .total-points h1 {
-            font-size: 36px;
-            color: #333;
-        }
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .card h3 {
-            margin-top: 0;
-            font-size: 18px;
-        }
-        .table-container {
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        table th {
-            background-color: #f0f0f0;
-        }
-        .chart-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-top: 20px;
-            padding: 10px;
-        }
-        footer {
-            background-color: #d6e8d5;
-            padding: 20px;
-            text-align: center;
-        }
-        footer .footer-grid {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        footer .footer-grid div {
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/monitoring.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-          <ul class="menu">
-            <li><a href="/user/dashboard.html">Dashboard</a></li>
-            <li><a href="/user/redeem.html">Tukar Poin</a></li>
-            <li><a href="/user/monitoring.html">Progress</a></li>
-            <li><a href="/user/layanan.html" class="active">Layanan</a></li>
-          </ul>
-          <div class="user-info">
-            <span class="points">950 POIN</span>
-            <div class="user-icon-container">
-              <img src="user-icon.png" alt="User Icon" class="user-icon">
-            </div>
-          </div>
-        </nav>
-      </header>
+<header>
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Tukar Poin</a>
+        <a href="#">Akumulasi</a>
+        <a href="#">Progress</a>
+        <a href="#">Layanan</a>
+    </nav>
+    <div class="points">250 POIN</div>
+</header>
 
 <div class="container">
     <div class="card total-points">
@@ -184,13 +91,13 @@
 
 <footer>
     <div class="footer-left">
-        <h3>ReLeaf (logo)</h3>
-        <p>Tentang Kami</p>
-        <p>Home</p>
-        <p>Layanan</p>
-        <p>Dampak</p>
-    </div>
-    <div class="footer-right">
+        <h3>ReLeaf (LOGO)</h3>
+        <p><a href="/homepage/tentang_kami.html">Tentang Kami</a></p>
+        <p><a href="/homepage/index.html">Home</a></p>
+        <p><a href="/homepage/layanan.html">Layanan</a></p>
+        <p><a href="/homepage/dampak.html">Dampak</a></p>
+      </div>
+      <div class="footer-right">
         <p>Alamat: JL.Nusa Indah No 10, Condong Catur, Depok, Sleman, Yogyakarta</p>
         <p>Telepon: 082139219681</p>
         <p>Email: contact.releaf@releaf.co.id</p>
@@ -198,8 +105,8 @@
         <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
         <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
         <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
-    </div>
-  </footer>
+      </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -207,10 +114,10 @@
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'],
+            labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli','Agustus','September','Oktober','November','Desember'],
             datasets: [{
                 label: 'Poin Harian',
-                data: [50, 70, 80, 60, 90, 40, 100],
+                data: [50, 70, 80, 60, 90, 40, 100, 55, 45, 65, 32, 24, 54, 65],
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
                 borderWidth: 1

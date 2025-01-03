@@ -77,18 +77,22 @@
 </head>
 <body>
 
-<header>
-    <div class="header-content">
-        <nav>
-            <a href="#">Dashboard</a>
-            <a href="#">Tukar Point</a>
-            <a href="#">Akumulasi</a>
-            <a href="#">Progress</a>
-            <a href="#">Layanan</a>
+    <header>
+        <nav class="navbar">
+          <ul class="menu">
+            <li><a href="/user/dashboard.html">Dashboard</a></li>
+            <li><a href="/user/redeem.html">Tukar Poin</a></li>
+            <li><a href="/user/monitoring.html">Progress</a></li>
+            <li><a href="/user/layanan.html" class="active">Layanan</a></li>
+          </ul>
+          <div class="user-info">
+            <span class="points">950 POIN</span>
+            <div class="user-icon-container">
+              <img src="user-icon.png" alt="User Icon" class="user-icon">
+            </div>
+          </div>
         </nav>
-        <div class="points">990 POIN</div>
-    </div>
-</header>
+      </header>
 
 <div class="carousel">
     <div>Poster Iklan dari Mitra</div>
@@ -139,9 +143,23 @@
 </div>
 
 <footer>
-    <p>ReLeaf (logo)</p>
-    <p>Contact: contact.releaf@releaf.co.id</p>
-</footer>
+    <div class="footer-left">
+        <h3>ReLeaf (logo)</h3>
+        <p>Tentang Kami</p>
+        <p>Home</p>
+        <p>Layanan</p>
+        <p>Dampak</p>
+    </div>
+    <div class="footer-right">
+        <p>Alamat: JL.Nusa Indah No 10, Condong Catur, Depok, Sleman, Yogyakarta</p>
+        <p>Telepon: 082139219681</p>
+        <p>Email: contact.releaf@releaf.co.id</p>
+        <p>Media Sosial:</p>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+    </div>
+  </footer>
 
 </body>
 </html>

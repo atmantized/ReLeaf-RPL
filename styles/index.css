@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #d0e8d0;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav,
+header .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+header nav a,
+header .nav-right a {
+  text-decoration: none;
+  color: #333; 
+  margin-right: 15px;
+}
+
+header .nav-right a {
+  margin-right: 0; /
+}
+
+header .nav-right a + a {
+  border-left: 1px solid #999;
+  padding-left: 15px;
+  margin-left: 15px; 
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    padding: 100px 30px;
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    width: 50%; 
+    }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/main.png'); /* Repeat the image here */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; 
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-content button {
+    position: absolute;
+    left: 15%; 
+} 
+.hero button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #6da36b;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #588b57;
+}
+
+/* Process section styles */
+.process-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .process-section div {
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Needed for absolute positioning of the background */
+    width: 200px; /* Ensure each div has a fixed width */
+  }
+  
+  .process-section div::before {
+    content: ""; /* Required to create the pseudo-element */
+    position: absolute;
+    top: -10px; /* Moves the green background above the image */
+    left: -10px; /* Moves the green background to the left */
+    right: -10px; /* Expands the green background to the right */
+    bottom: -10px; /* Moves the green background below the image */
+    background-color: green; /* Green background */
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    z-index: -1; /* Ensures the background stays behind the image and text */
+  }
+  
+  .process-section img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 5px;
+  }
+  
+
+/* Stats section styles */
+.stats-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.stats-section div {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #dfe7df;
+  border-radius: 10px;
+}
+
+/* Testimonial section styles */
+.testimonial-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonial-section .testimonial-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.testimonial-section .testimonial-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.testimonial-section .testimonial-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.partners-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.partners-section .partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.partners-section .partner-logos div {
+  width: 100px;
+  height: 100px;
+  background-color: #d0e8d0;
+  border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #6da36b;
+  color: #ffffff;
+}
+
+footer .footer-left,
+footer .footer-right {
+  flex: 1;
+}
+
+footer .footer-right {
+  text-align: right;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend UI</title>
+  <link rel="stylesheet" href="/styles/daftar.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="/homepage/index.html">Home</a>
+            <a href="/homepage/dampak.html">Dampak</a>
+            <a href="/homepage/tentang kami.html">Tentang Kami</a>
+        </nav>
+        <div class="nav-right">
+            <a href="/homepage/daftar.html">Daftar</a></li>
+            <a href="/homepage/login.html">Masuk</a>
+        </div>
+    </header>
+
+  <div class="form-container">
+    <form class="register-form">
+      <h2>Daftar</h2>
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Nama Lengkap">
+      </div>
+      <div class="form-group">
+        <label for="email">Alamat e-mail</label>
+        <input type="email" id="email" placeholder="Alamat e-mail">
+      </div>
+      <div class="form-group">
+        <label for="password">Kata Sandi</label>
+        <input type="password" id="password" placeholder="Kata Sandi">
+      </div>
+      <button type="submit" class="submit-button">Daftar</button>
+    </form>
+  </div>
+
+  <div id="popup-verifikasi" class="popup">
+    <div class="popup-content">
+        <h3>Verifikasi Email</h3>
+        <p>Silakan cek email Anda untuk mendapatkan kode verifikasi.</p>
+        <input type="text" id="verification-code" placeholder="Masukkan kode verifikasi">
+        <button class="popup-content-button" onclick="verifyCode()">Submit</button>    
+    </div>
+</div>
+
+  <footer>
+    <div class="footer-left">
+      <h3>ReLeaf (LOGO)</h3>
+      <p><a href="/homepage/tentang_kami.html">Tentang Kami</a></p>
+      <p><a href="/homepage/index.html">Home</a></p>
+      <p><a href="/homepage/layanan.html">Layanan</a></p>
+      <p><a href="/homepage/dampak.html">Dampak</a></p>
+    </div>
+    <div class="footer-right">
+      <p>Alamat: JL.Nusa Indah No 10, Condong Catur, Depok, Sleman, Yogyakarta</p>
+      <p>Telepon: 082139219681</p>
+      <p>Email: contact.releaf@releaf.co.id</p>
+      <p>Media Sosial:</p>
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.register-form').addEventListener('submit', function(event) {
+        event.preventDefault();  // Menghentikan form dari pengiriman default
+        document.getElementById('popup-verifikasi').style.display = 'block'; 
+    });
+
+    function verifyCode() {
+        const kode = document.getElementById('verification-code').value;
+        
+        if (kode === "123456") {  // Simulasi kode verifikasi (gunakan server-side check di produksi)
+            alert('Verifikasi Berhasil!');
+            document.getElementById('popup-verifikasi').style.display = 'none';
+        } else {
+            alert('Kode salah, coba lagi!');
+        }
+    }
+
+    function closePopup() {
+        document.getElementById('popup-verifikasi').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

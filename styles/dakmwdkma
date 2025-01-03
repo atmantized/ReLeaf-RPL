@@ -1,0 +1,97 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #d6e8d5;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .points {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .total-points {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .total-points h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        table th {
+            background-color: #f0f0f0;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #6da36b;
+            color: #ffffff;
+            margin-top: auto;
+          }
+          
+          footer .footer-left,
+          footer .footer-right {
+            flex: 1;
+          }
+          
+          footer .footer-right {
+            text-align: right;
+          }
+          
+          footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+          }

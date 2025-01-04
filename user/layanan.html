@@ -12,8 +12,7 @@
   <nav class="navbar">
     <ul class="menu">
       <li><a href="/user/dashboard.html">Dashboard</a></li>
-      <li><a href="/user/redeem.html">Tukar Poin</a></li>
-      <li><a href="/user/monitoring.html">Progress</a></li>
+      <li><a href="/user/akumulasi.html">Akumulasi</a></li>
       <li><a href="/user/layanan.html" class="active">Layanan</a></li>
     </ul>
     <div class="user-info">
@@ -28,8 +27,6 @@
   <main>
     <section class="service-section">
       <div class="tabs">
-        <button class="tab active">PickUp Service</button>
-        <button class="tab">Drop Off Service</button>
       </div>
       <div class="form-container">
         <div class="form-group">
@@ -52,11 +49,16 @@
         <div class="form-group">
           <button type="submit" class="submit-button">Kirim</button>
         </div>
-      </div>
-     
       </div>      
     </section>
-
+    <div id="popup-verifikasi" class="popup">
+      <div class="popup-content">
+          <h3>Verifikasi Email</h3>
+          <p>Silakan cek email Anda untuk mendapatkan kode verifikasi.</p>
+          <input type="text" id="verification-code" placeholder="Masukkan kode verifikasi">
+          <button class="popup-content-button" onclick="verifyCode()">Submit</button>    
+      </div>
+  </div>
     <section class="tutorial-section">
       <h2>Tutorial</h2>
       <div class="tutorial-cards">

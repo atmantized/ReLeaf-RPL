@@ -41,19 +41,19 @@
 
 <div class="vouchers">
     <h3>Voucher</h3>
-    <div class="voucher-item" onclick="openVoucherDetails('15% Diskon', 'Pulsa Rp15.000', '5.000 Poin')">
+    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan', 'Diskon 15%', '5.000 Poin')">
         <img src="/images/3.png" width="200" height="140" alt="Proses Pickup">
         <h4>15% diskon </h4>
         <p>500 Poin </p>
     </div>
-    <div class="voucher-item" onclick="openVoucherDetails('15% Diskon', 'Pulsa Rp20.000', '10.000 Poin')">
+    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan', 'Diskon 20%', '10.000 Poin')">
       <img src="/images/4.png" width="200" height="140" alt="Proses Pickup">
       <h4>20% diskon </h4>
       <p>1000 Poin</p>
     </div>
-    <div class="voucher-item" onclick="openVoucherDetails('15% Diskon', 'Pulsa Rp25.000', '15.000 Poin')">
+    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan ', 'Pulsa Rp50.000', '15.000 Poin')">
       <img src="/images/5.png" width="200" height="140" alt="Proses Pickup">
-      <h4>Rp50.000 </h4>
+      <h4>Rp50.000</h4>
       <p>15000 Poin</p>
     </div>
 </div>
@@ -108,10 +108,10 @@
   </footer>
   <script>
     // Function to open voucher details popup
-    function openVoucherDetails(title, details, points) {
+    function openVoucherDetails(title, details, poin) {
       document.getElementById('voucherTitle').innerText = title;
       document.getElementById('voucherDetails').innerText = details;
-      document.getElementById('voucherPoints').innerText = points;
+      document.getElementById('voucherPoints').innerText = poin;
       document.getElementById('voucherPopup').style.display = 'block';
     }
 

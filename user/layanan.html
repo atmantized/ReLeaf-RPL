@@ -55,8 +55,23 @@
     </section>
     <div id="popup-verifikasi" class="popup">
       <div class="popup-content">
-          <h3>Verifikasi Data</h3>
-          <p>Silakan cek kembali data Anda untuk memastikan lorem aksjaksjkajsakj.</p>
+          <h1>Verifikasi Data</h1>
+          <p>Silakan cek kembali data yang Anda isikan.</p>
+          <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>Alamat Pickup</th>
+                <td><span id="confirm-pickup"></span></td>
+            </tr>
+            <tr>
+                <th>Kondisi Buku</th>
+                <td><span id="confirm-condition"></span></td>
+            </tr>
+            <tr>
+                <th>Kuantitas (Kg)</th>
+                <td><span id="confirm-quantity"></span></td>
+            </tr>
+        </table>
+          
           <div class="popup-button-row">
             <button class="popup-batal-button">Batal</button>
             <button class="popup-edit-button">Edit</button>
@@ -111,7 +126,19 @@
   <script>
     document.querySelector('.layanan-form').addEventListener('submit', function(event) {
         event.preventDefault();  
+       // Mengambil data dari input form
+        const pickup = document.getElementById('pickup').value;
+        const condition = document.getElementById('condition').value;
+        const quantity = document.getElementById('quantity').value;
+
+        // Memasukkan data ke dalam tabel popup
+        document.getElementById('confirm-pickup').textContent = pickup;
+        document.getElementById('confirm-condition').textContent = condition;
+        document.getElementById('confirm-quantity').textContent = quantity;
+
+        // Menampilkan popup
         document.getElementById('popup-verifikasi').style.display = 'flex'; 
+
     });
     
     // Tombol Edit

@@ -307,3 +307,23 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
+.popup-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popup-content ul li {
+  margin-bottom: 10px;
+}
+
+.popup-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.popup-content table th, 
+.popup-content table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}

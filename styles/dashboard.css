@@ -118,6 +118,7 @@ header {
 }
 .vouchers, .services {
   margin: 20px;
+  
 }
 .vouchers .voucher-item, .services .service-item {
   display: inline-block;
@@ -127,6 +128,8 @@ header {
   border-radius: 5px;
   text-align: center;
   width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow to the container */
+  border-radius: 10px;
 }
 
 /* Footer styles */

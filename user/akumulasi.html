@@ -26,6 +26,9 @@
 
 <div class="container">
     <div class="card total-points">
+        <div class="status-bar" id="statusBar">
+            <span id="statusText">Tidak Ada Transaksi</span>
+        </div>
         <h1>250 POIN</h1>
     </div>
 
@@ -137,6 +140,24 @@
         }
     });
 </script>
+<script>
+    const hasTransaction = true; // Ganti dengan kondisi sebenarnya (true jika ada transaksi, false jika tidak)
+    const statusBar = document.getElementById('statusBar');
+    const statusText = document.getElementById('statusText');
+
+    // Ubah warna dan teks berdasarkan kondisi transaksi
+    if (hasTransaction) {
+        statusBar.classList.add('green');
+        statusBar.classList.remove('red');
+        statusText.textContent = 'Transaksi Berlangsung';
+    } else {
+        statusBar.classList.add('red');
+        statusBar.classList.remove('green');
+        statusText.textContent = 'Tidak Ada Transaksi';
+    }
+</script>
+
+
 
 </body>
 </html>

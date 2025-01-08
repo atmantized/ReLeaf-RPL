@@ -51,13 +51,13 @@ header .logo {
 
 /* Gaya untuk kontainer form */
 .form-container {
-    margin-top: 200px; /* Jarak 20px antara kontainer dan header */
-    max-width: 400px; /* Membatasi lebar maksimal */
-    margin: auto; /* Memusatkan form secara horizontal */
-    padding: 20px; /* Memberikan ruang di dalam kotak */
-    border: 1px solid #ccc; /* Garis border sekeliling kontainer */
-    border-radius: 10px; /* Sudut melengkung pada kontainer */
-    background-color: #f9f9f9; /* Latar belakang kotak */
+    margin-top: 200px; 
+    max-width: 350px;
+    margin: auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
 }
 
 /* Toggle button styles */

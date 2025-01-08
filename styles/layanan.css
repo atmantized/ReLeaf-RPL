@@ -8,12 +8,12 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #dce6d5; /* Light green */
+  background-color: #dce6d5; 
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 50px; 
   margin: 10px 20px;
 }
 
@@ -46,7 +46,7 @@ header {
 
 .menu li a:hover,
 .menu li a.active {
-  background-color: #b8d2b0; /* Slightly darker green */
+  background-color: #b8d2b0; 
   color: #fff;
 }
 
@@ -67,8 +67,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #333; /* Circle border */
-  border-radius: 50%;
+  border: 2px solid #333; 
 }
 
 .user-icon {
@@ -196,7 +195,7 @@ header {
 /* Container untuk button atas (Edit dan Batal) */
 .popup-button-row {
   display: flex;
-  justify-content: space-between; /* Edit di kiri, Batal di kanan */
+  justify-content: space-between; 
   gap: 10px;
   width:100;
 }
@@ -210,7 +209,7 @@ header {
 /* Tombol Submit di tengah bawah */
 .popup-submit-button {
   background-color: #4caf50;
-  width: 100%; /* Full width untuk submit di bawah */
+  width: 100%;
 }
 
 /* Tombol Batal */

@@ -62,7 +62,7 @@ header .logo {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/images/main.png'); /* Repeat the image here */
+    background-image: url('/images/main.png'); 
     background-size: cover;
     background-position: center;
     opacity: 0.5; 
@@ -103,23 +103,23 @@ header .logo {
 .process-section div {
   text-align: center;
   padding: 10px;
-  position: relative; /* Needed for absolute positioning of the background */
-  width: 200px; /* Ensure each div has a fixed width */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow to the container */
-  border-radius: 10px; /* Optional: Rounded corners for the container */
-  background-color: white; /* Ensures the shadow is visible */
+  position: relative;
+  width: 200px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
 }
 
 .process-section div::before {
-  content: ""; /* Required to create the pseudo-element */
+  content: ""; 
   position: absolute;
-  top: -10px; /* Moves the green background above the image */
-  left: -10px; /* Moves the green background to the left */
-  right: -10px; /* Expands the green background to the right */
-  bottom: -10px; /* Moves the green background below the image */
-  background-color: green; /* Green background */
-  border-radius: 10px; /* Optional: Makes the corners rounded */
-  z-index: -1; /* Ensures the background stays behind the image and text */
+  top: -10px; 
+  left: -10px; 
+  right: -10px; 
+  bottom: -10px; 
+  background-color: green;
+  border-radius: 10px; 
+  z-index: -1; 
 }
 
 .process-section img {

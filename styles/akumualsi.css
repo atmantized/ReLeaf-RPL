@@ -83,8 +83,13 @@ header nav a {
   text-align: center;
   margin: 20px 0;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+    justify-content: space-between; /* Memberikan jarak di antara elemen */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    padding: 10px;
+    background-color: #f9f9f9; /* Warna latar opsional */
+    border-radius: 8px; /* Membuat sudut membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
 }
 .total-points p {
   margin-top: 10px;
@@ -92,6 +97,7 @@ header nav a {
   color: #555;
 }
 .total-points h1 {
+  margin: 0;
   font-size: 36px;
   color: #333;
 }
@@ -171,21 +177,17 @@ footer a {
   margin: 0 10px;
 }
 .status-bar {
-  position: fixed;
-  top: 20px;
-  right: 20px;
   width: 200px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
 .status-bar.green {
   background-color: #4CAF50; /* Hijau untuk transaksi berlangsung */
 }

@@ -41,32 +41,32 @@
 
 <div class="vouchers">
     <h3>Voucher</h3>
-    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan', 'Diskon 15%', '500 Poin')">
+    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan', 'Diskon 15%', '500 Poin','Berlaku s.d. 13 Februari 2025')">
         <img src="/images/3.png" width="200" height="140" alt="Proses Pickup">
         <h5>Sahabat Awal Tahun Diskon 15% </h5>
         <p>500 Poin </p>
     </div>
-    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan', 'Diskon 20%', '1000 Poin')">
+    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan', 'Diskon 20%', '1000 Poin','Berlaku s.d. 13 Februari 2025')">
       <img src="/images/4.png" width="200" height="140" alt="Proses Pickup">
       <h5>Sahabat Awal Tahun Diskon 20% </h5>
       <p>1.000 Poin</p>
     </div>
-    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan  ', 'E-Voucher Belanja Rp 50.000', '10.000 Poin')">
+    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan  ', 'E-Voucher Belanja Rp 50.000', '10.000 Poin','Berlaku s.d. 13 Februari 2025')">
       <img src="/images/5.png" width="200" height="140" alt="Proses Pickup">
       <h5>E-Voucher Belanja Rp 50.000</h5>
       <p>10.000 Poin</p>
     </div>
-    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan ', 'E-Voucher Belanja Rp 100.000', '15.000 Poin')">
+    <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan ', 'E-Voucher Belanja Rp 100.000', '15.000 Poin','Berlaku s.d. 13 Februari 2025')">
         <img src="/images/6.png" width="200" height="140" alt="Proses Pickup">
        <h5>E-Voucher Belanja Rp 100.000</h5>
         <p>15.000 Poin</p>
       </div>
-      <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan ', 'E-Voucher Belanja Rp 200.000', '20.000 Poin')">
+      <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan ', 'E-Voucher Belanja Rp 200.000', '20.000 Poin','Berlaku s.d. 13 Februari 2025')">
         <img src="/images/7.png" width="200" height="140" alt="Proses Pickup">
         <h5>E-Voucher Belanja Rp 200.000</h5>
         <p>20.000 Poin</p>
       </div>
-      <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan ', 'E-Voucher Belanja Rp 500.000', '25.000 Poin')">
+      <div class="voucher-item" onclick="openVoucherDetails('Anda Menukarkan Poin Anda Dengan ', 'E-Voucher Belanja Rp 500.000', '25.000 Poin','Berlaku s.d. 13 Februari 2025')">
         <img src="/images/8.png" width="200" height="140" alt="Proses Pickup">
         <h5>E-Voucher Belanja Rp 500.000</h5>
         <p>25.000 Poin</p>
@@ -79,6 +79,7 @@
     <h4 id="voucherTitle"></h4>
     <p id="voucherDetails"></p>
     <p id="voucherPoints"></p>
+    <p id="voucherlimit"></p>
     <button onclick="closeVoucherPopup()">Batal</button>
     <button onclick="redeemVoucher()">Tukar</button>
   </div>
@@ -88,7 +89,7 @@
 <h3>Layanan</h3>
 <section class="process-section">
   <div>
-    <img src="/images/pckp.png" alt="Proses Pickup">
+    <img src="/images/anu.jpg" alt="Proses Pickup">
     <p>Pickup</p>
   </div>
   <div>
@@ -96,7 +97,7 @@
     <p>Daur Ulang</p>
   </div>
   <div>
-    <img src="/images/bk.jpg" alt="Pelayanan">
+    <img src="/images/buku.jpg" alt="Pelayanan">
     <p>Pelayanan</p>
   </div>
 </section>
@@ -124,10 +125,11 @@
   </footer>
   <script>
     // Function to open voucher details popup
-    function openVoucherDetails(title, details, poin) {
+    function openVoucherDetails(title, details, poin, limit) {
       document.getElementById('voucherTitle').innerText = title;
       document.getElementById('voucherDetails').innerText = details;
       document.getElementById('voucherPoints').innerText = poin;
+      document.getElementById('voucherlimit').innerText = limit;
       document.getElementById('voucherPopup').style.display = 'block';
     }
 

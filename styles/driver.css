@@ -2,15 +2,21 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
+    background-image: url('/images/pick.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size:cover;          /* Menutupi seluruh area container */
+    background-position: center; 
+    backdrop-filter: blur(5px); /* Efek blur pada seluruh elemen */
+
 }
 
 /* Header styles */
 header {
-    background-color: #d0e8d0;
+    background-color: #e5f1e5;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header nav,
@@ -51,31 +57,53 @@ header .logo {
 
 /* Gaya untuk kontainer form */
 .form-container {
-    margin-top: 200px;  dan header */
-    max-width: 350px;
-    margin: auto; 
-    padding: 20px; 
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    background-color: #f9f9f9; 
+    background-size: cover;          /* Menutupi seluruh area container */
+    background-position: center; 
+    max-width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 30px; 
+    border: 1px solid #8dbe77;
+    background-color: #f9f9f9;
+    border-radius: 45px; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+  }
+
+/* Avatar image */
+.user-avatar {
+    width: 150px;
+    height: 150px;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #87ce92;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
-/* Toggle button styles */
-.toggle-button {
-    width: 100px;
-    height: 100px;
-    border: none;
-    border-radius: 50%;
-    background-color: green;
-    color: white;
+/* Header text */
+h1 {
     font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Toggle Button styles */
+.toggle-button {
+    display: inline-block;
+    padding: 30px 30px;
+    font-size: 35px;
+    background-color: #66d478;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
 
 .toggle-button.off {
-    background-color: red;
+    background-color: rgb(196, 50, 50);
 }
 
 /* Popup styles */

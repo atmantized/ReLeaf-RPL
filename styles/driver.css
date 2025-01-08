@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #d0e8d0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav,
+header .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+header nav a,
+header .nav-right a {
+    text-decoration: none;
+    color: #333; 
+    margin-right: 15px;
+}
+
+header .nav-right a {
+    margin-right: 0;
+}
+
+header .nav-right a + a {
+    border-left: 1px solid #999;
+    padding-left: 15px;
+    margin-left: 15px; 
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gaya untuk kontainer form */
+.form-container {
+    margin-top: 200px; /* Jarak 20px antara kontainer dan header */
+    max-width: 400px; /* Membatasi lebar maksimal */
+    margin: auto; /* Memusatkan form secara horizontal */
+    padding: 20px; /* Memberikan ruang di dalam kotak */
+    border: 1px solid #ccc; /* Garis border sekeliling kontainer */
+    border-radius: 10px; /* Sudut melengkung pada kontainer */
+    background-color: #f9f9f9; /* Latar belakang kotak */
+}
+
+/* Toggle button styles */
+.toggle-button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button.off {
+    background-color: red;
+}
+
+/* Popup styles */
+.popup {
+    display: none; /* Default hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-popup {
+    background-color: #f44336;
+    color: white;
+}

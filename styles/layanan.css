@@ -164,25 +164,6 @@ header {
   background-color: #45a049;
 }
 
-
-/* Tombol submit */
-.submit-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* Hover effect pada tombol */
-.submit-button:hover {
-  background-color: #45a049;
-}
-
 /* Popup styles */
 .popup {
   display: none;
@@ -196,30 +177,52 @@ header {
 }
 
 .popup-content {
-  border: 1px solid #ccc;   
   background: white;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   width: 20%;
-  margin: 15% auto;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.popup-content #verification-code {
-  width: 80%;             /* Adjusts the width of the input field */
-  padding: 10px;          /* Adds spacing inside the input */
-  border: 1px solid #ccc; /* Adds a light border for clarity */
-  border-radius: 5px;     /* Softens the edges */
-  font-size: 16px;        /* Increases text size for readability */
-  text-align: center;     /* Centers the input text */
-  margin-bottom: 15px;    /* Adds spacing below the input field */
+/* Container untuk button atas (Edit dan Batal) */
+.popup-button-row {
+  display: flex;
+  justify-content: space-between; /* Edit di kiri, Batal di kanan */
+  gap: 10px;
+  width:100;
 }
 
-.popup-content-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #8fb98f;
+/* Tombol Edit */
+.popup-edit-button {
+  background-color: #666;
+  width: 80px;
+}
+
+/* Tombol Submit di tengah bawah */
+.popup-submit-button {
+  background-color: #4caf50;
+  width: 100%; /* Full width untuk submit di bawah */
+}
+
+/* Tombol Batal */
+.popup-batal-button {
+  background-color: #FF0000;
+  width: 80px;
+}
+
+.popup-edit-button,
+.popup-submit-button,
+.popup-batal-button {
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   color: white;
@@ -228,9 +231,17 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.popup-content-button:hover {
-  background-color: #6fa06f; /* Efek hover */
+/* Efek hover */
+.popup-edit-button:hover {
+  background-color: #a5a7aa;
 }
+.popup-submit-button:hover {
+  background-color: #abd3ad;
+}
+.popup-batal-button:hover {
+  background-color: #da9191;
+}
+
 
 /* Tutorial Section */
 .tutorial-section {

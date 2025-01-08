@@ -28,6 +28,8 @@
     <section class="service-section">
       <div class="tabs">
       </div>
+      <form class="layanan-form">
+       
       <div class="form-container">
         <div class="form-group">
           <label for="pickup">Alamat Pickup</label>
@@ -53,12 +55,17 @@
     </section>
     <div id="popup-verifikasi" class="popup">
       <div class="popup-content">
-          <h3>Verifikasi Email</h3>
-          <p>Silakan cek email Anda untuk mendapatkan kode verifikasi.</p>
-          <input type="text" id="verification-code" placeholder="Masukkan kode verifikasi">
-          <button class="popup-content-button" onclick="verifyCode()">Submit</button>    
-      </div>
-  </div>
+          <h3>Verifikasi Data</h3>
+          <p>Silakan cek kembali data Anda untuk memastikan lorem aksjaksjkajsakj.</p>
+          <div class="popup-button-row">
+            <button class="popup-batal-button">Batal</button>
+            <button class="popup-edit-button">Edit</button>
+          </div>
+
+          <button class="popup-submit-button">Submit</button>           
+        </div>
+    </div>
+</form>
     <section class="tutorial-section">
       <h2>Tutorial</h2>
       <div class="tutorial-cards">
@@ -84,11 +91,12 @@
 <footer>
     <div class="footer-left">
       <h3>ReLeaf (logo)</h3>
-      <p>Tentang Kami</p>
-      <p>Home</p>
-      <p>Layanan</p>
-      <p>Dampak</p>
+      <a href="/homepage/tentang kami.html">Tentang Kami</a>
+      <a href="/homepage/index.html">Home</a>
+      <a href="/homepage/layanan.html">Layanan</a>
+      <a href="/homepage/dampak.html">Dampak</a>
     </div>
+
     <div class="footer-right">
       <p>Alamat: JL.Nusa Indah No 10, Condong Catur, Depok, Sleman, Yogyakarta</p>
       <p>Telepon: 082139219681</p>
@@ -99,6 +107,36 @@
       <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
     </div>
   </footer>
+
+  <script>// Menampilkan popup saat form dikirim
+    document.querySelector('.layanan-form').addEventListener('submit', function(event) {
+        event.preventDefault();  
+        document.getElementById('popup-verifikasi').style.display = 'flex'; 
+    });
+    
+    // Tombol Edit
+    document.querySelector('.popup-edit-button').addEventListener('click', function() {
+    event.preventDefault();  
+    document.getElementById('popup-verifikasi').style.display = 'none'; // Memastikan popup benar-benar hilang
+    
+});
+    
+    // Tombol Submit
+    document.querySelector('.popup-submit-button').addEventListener('click', function() {
+        alert('Form berhasil dikirim!');
+        document.getElementById('popup-verifikasi').style.display = 'none';
+        document.querySelector('.layanan-form').submit();
+    });
+    
+    // Tombol Batal
+    document.querySelector('.popup-batal-button').addEventListener('click', function() {
+      event.preventDefault();  
+        document.getElementById('popup-verifikasi').style.display = 'none';
+        document.querySelector('.layanan-form').querySelectorAll('input').forEach(input => {
+          input.value = '';
+        });
+    }); 
+</script>  
 
 </body>
 </html>

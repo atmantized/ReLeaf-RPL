@@ -82,6 +82,24 @@ header {
   margin: 20px 0;
   background-color: #e0e0e0;
   padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+.text-container {
+  background-color: #e0e0e0; /* Warna latar belakang seperti contoh */
+  text-align: center; /* Rata tengah teks */
+  padding: 20px; /* Spasi di sekitar teks */
+}
+
+.text-container h1 {
+  font-size: 24px; /* Ukuran teks besar */
+  margin: 0; /* Hilangkan margin atas dan bawah */
+}
+
+.text-container p {
+  font-size: 16px; /* Ukuran teks kecil */
+  margin: 0; /* Hilangkan margin atas dan bawah */
+  color: #555; /* Warna teks lebih lembut */
 }
 .category {
   display: flex;

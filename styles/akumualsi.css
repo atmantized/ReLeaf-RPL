@@ -82,10 +82,30 @@ header nav a {
 .total-points {
   text-align: center;
   margin: 20px 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total-points p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
 }
 .total-points h1 {
   font-size: 36px;
   color: #333;
+}
+.points-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara teks dan bar */
+}
+.transaction-bar {
+  width: 20px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: gray; /* Default warna jika tidak ada transaksi */
+  transition: background-color 0.3s ease-in-out;
 }
 .card {
   background-color: #fff;
@@ -149,4 +169,27 @@ footer a {
   color: #ffffff;
   text-decoration: none;
   margin: 0 10px;
+}
+.status-bar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.status-bar.green {
+  background-color: #4CAF50; /* Hijau untuk transaksi berlangsung */
+}
+
+.status-bar.red {
+  background-color: #FF5722; /* Merah untuk tidak ada transaksi */
 }

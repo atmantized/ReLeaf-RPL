@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Customer</title>
+    <link rel="stylesheet" href="/styles/driver_orderdetail.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+        </nav>
+    </header>  
+
+    <main>
+        <!-- Container Besar -->
+        <div class="form-container-order">
+            <!-- Judul Tengah Atas -->
+            <h1 class="form-title">Informasi Customer</h1>
+
+            <!-- Menggunakan Flexbox untuk membagi kiri dan kanan -->
+            <div class="content-wrapper">
+                <!-- Customer Info (Kiri) -->
+                <div class="small-container">
+                    <img class="user-avatar" src="/images/pdriver.jpg" alt="User Avatar">
+                    <div class="customer-info">
+                        <p><strong>Nama:</strong> John Doe</p>
+                        <p><strong>Alamat:</strong> Jl. Merdeka No. 123</p>                    
+                    </div>
+                </div>
+            
+                <!-- Iframe di Sebelah Kanan -->
+                <div class="iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2818402780804!2d110.4090461!3d-7.759904899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversity%20of%20Amikom%20Yogyakarta!5e0!3m2!1sen!2sid!4v1736424105081!5m2!1sen!2sid" 
+                    width="600" height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+            </div>
+            
+
+            <!-- Order Status di bawah -->
+            <div class="order-status">
+                <p><strong>Status Pesanan:</strong> Sedang Diproses</p>
+                <p><strong>Estimasi Waktu:</strong> 15 menit</p>
+                <p><strong>Metode Pembayaran:</strong> COD</p>
+            </div>
+
+            <!-- Tombol Selesai -->
+            <div class="form-group">
+                <button class="toggle-button" onclick="toggleButton(this)">Selesai</button>            
+            </div>
+        </div>
+    </main>
+</body>
+</html>

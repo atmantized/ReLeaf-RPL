@@ -61,9 +61,7 @@ body {
 
 /* Iframe (Kanan) */
 .iframe-container {
-    flex: 10; /* Memberikan lebih banyak ruang untuk iframe */
-    max-width: 10000px; /* Atur lebar maksimum untuk iframe */
-    height: 30px; /* Tetapkan tinggi yang sesuai */
+    margin-left: 320px;
 }
 
 

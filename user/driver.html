@@ -1,67 +1,72 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Toggle Button with Popup</title>
-        <link rel="stylesheet" href="/styles/driver.css">
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <nav class="navbar">
-                <div class="logo">LOGO</div>
-            </nav>
-        </header>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button with Popup</title>
+    <link rel="stylesheet" href="/styles/driver.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+        </nav>
+    </header>  
 
-        <main>
-            <div class="form-container">
-                <div class="form-group">
-                <label for="pickup">Alamat Pickup</label>
-            </div> 
-                <div class="hero">
-                    <!-- Toggle Button -->
-                    <button class="toggle-button" onclick="toggleButton(this)">ON</button>  
-                </div>
+    <main>
+        <div class="form-container">
+            <div class="form-group">
+                <img class="user-avatar" src="/images/pdriver.jpg" alt="User Avatar">
+                <h1>Halo, Driver!</h1>
             </div>
-        </main>
-
-        <!-- Popup -->
-        <div class="popup" id="orderPopup">
-            <h2>Informasi Order</h2>
-            <p>Order dari User: <strong>#12345</strong></p>
-            <p>Alamat: Jl. Mawar No. 10</p>
-            <p>Pesanan: 2x Buku, 1x Novel</p>
-            <button class="close-popup" onclick="closePopup()">Tutup</button>
+            <div class="form-group">
+                <p>Yuk aktifin akun kamu.</p>
+            </div>
+            <!-- ✅ Tombol yang ditambahkan -->
+            <div class="form-group">
+                <button class="toggle-button" onclick="toggleButton(this)">ON</button>
+            </div>
         </div>
+    </main>
 
-        <!-- JavaScript -->
-        <script>
-            function toggleButton(button) {
-                if (button.textContent === 'ON') {
-                    button.textContent = 'OFF';
-                    button.classList.add('off');
-                    showPopup(); // Memunculkan popup saat tombol "ON" diklik
-                } else {
-                    button.textContent = 'ON';
-                    button.classList.remove('off');
-                }
-            }
+    <!-- Popup -->
+    <div class="popup" id="orderPopup" style="display: none;">
+        <h2>Informasi Order</h2>
+        <p>Order dari User: <strong>#12345</strong></p>
+        <p>Alamat: Jl. Mawar No. 10</p>
+        <p>Pesanan: 2x Buku, 1x Novel</p>
+        <button class="close-popup" onclick="closePopup()">Tutup</button>
+    </div>
 
-            function showPopup() {
-                document.getElementById('orderPopup').style.display = 'block';
+    <!-- JavaScript -->
+    <script>
+        function toggleButton(button) {
+            if (button.textContent === 'ON') {
+                button.textContent = 'OFF';
+                button.classList.add('off');
+                showPopup(); // Memunculkan popup saat tombol "ON" diklik
+            } else {
+                button.textContent = 'ON';
+                button.classList.remove('off');
             }
+        }
 
-            function closePopup() {
-                document.getElementById('orderPopup').style.display = 'none';
-            }
-            function simulateNewOrder() {
+        function showPopup() {
+            document.getElementById('orderPopup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('orderPopup').style.display = 'none';
+        }
+
+        function simulateNewOrder() {
             setTimeout(() => {
                 alert('Order baru telah masuk!');
                 showPopup();
             }, 5000); // Muncul setelah 5 detik
         }
         simulateNewOrder();
-        </script>
-    </body>
-    </html>
+    </script>
+</body>
+</html>

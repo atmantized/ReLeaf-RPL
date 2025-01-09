@@ -16,16 +16,17 @@
 
     <main>
         <div class="form-container">
+            <!-- Avatar & Headline -->
             <div class="form-group">
                 <img class="user-avatar" src="/images/pdriver.jpg" alt="User Avatar">
-                <h1>Halo, Driver!</h1>
+                <h1>Siap Terima Order?</h1>
+                <p>Aktifkan akunmu untuk mulai menerima orderan dari pelanggan. Jangan lewatkan peluangmu!</p>
             </div>
+            
+            <!-- ✅ Tombol Toggle & Status -->
             <div class="form-group">
-                <p>Yuk aktifin akun kamu.</p>
-            </div>
-            <!-- ✅ Tombol yang ditambahkan -->
-            <div class="form-group">
-                <button class="toggle-button" onclick="toggleButton(this)">ON</button>
+                <button class="toggle-button" onclick="toggleButton(this)">OFF</button>
+                <p id="statusText" style="margin-top: 10px; font-weight: bold;"></p>
             </div>
         </div>
     </main>
@@ -45,10 +46,12 @@
             if (button.textContent === 'ON') {
                 button.textContent = 'OFF';
                 button.classList.add('off');
+                statusText.textContent = 'Status: Aktif';
                 showPopup(); // Memunculkan popup saat tombol "ON" diklik
             } else {
                 button.textContent = 'ON';
                 button.classList.remove('off');
+                statusText.textContent = 'Status: Non Aktif';
             }
         }
 

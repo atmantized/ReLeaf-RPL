@@ -293,11 +293,6 @@ footer {
   color: #ffffff;
 }
 
-footer .footer-left,
-footer .footer-right {
-  flex: 1;
-}
-
 footer .footer-right {
   text-align: right;
 }

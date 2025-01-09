@@ -23,7 +23,7 @@
     </header>
 
   <div class="form-container">
-    <form class="register-form">
+    <form class="register-form" onsubmit="validateLogin(event)">
       <h2>Masuk</h2>
       <div class="form-group">
         <label for="email">Alamat e-mail</label>
@@ -55,5 +55,37 @@
       <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
     </div>
   </footer>
+  
+  <script>
+    // Data kredensial yang sudah didefinisikan (untuk demo saja)
+    const validCredentials = {
+      email: "user@gmail.com",  
+      password: "abc123"      
+    };
+    
+    // Fungsi validasi login
+    function validateLogin(event) {
+      event.preventDefault();  // Mencegah submit otomatis form
+  
+      const emailInput = document.getElementById('email').value.trim();
+      const passwordInput = document.getElementById('password').value.trim();
+  
+      // Cek jika ada kolom yang kosong
+      if (!emailInput || !passwordInput) {
+          alert("Harap isi semua kolom dengan benar!");
+          return;
+      }
+  
+      // Memeriksa apakah email dan password sesuai
+      if (emailInput === validCredentials.email && passwordInput === validCredentials.password) {
+          alert("Login berhasil!");  
+          window.location.href = "/user/dashboard.html";  // Redirect ke dashboard
+      } else {
+          alert("Email atau password salah. Silakan coba lagi.");
+      }
+  }
+  </script>
+  
+
 </body>
 </html>

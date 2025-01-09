@@ -4,9 +4,10 @@ body {
     text-align: center;
     background-image: url('/images/pick.jpg'); /* Ganti dengan path gambar yang sesuai */
     background-size:cover;          /* Menutupi seluruh area container */
-    background-position: center; 
-    backdrop-filter: blur(5px); /* Efek blur pada seluruh elemen */
-
+    background-position:relative; 
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 /* Header styles */
@@ -77,13 +78,14 @@ header .logo {
     border-radius: 50%;
     border: 5px solid #87ce92;
     margin-bottom: auto;
-    margin-top: auto;
+    margin-top: 45px;
 }
 
 /* Header text */
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-top:center;
     color: #333;
 }
 
@@ -97,7 +99,7 @@ h1 {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }

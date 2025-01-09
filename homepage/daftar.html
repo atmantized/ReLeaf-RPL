@@ -74,13 +74,14 @@
         event.preventDefault();  // Menghentikan form dari pengiriman default
         document.getElementById('popup-verifikasi').style.display = 'block'; 
     });
-
+  
     function verifyCode() {
         const kode = document.getElementById('verification-code').value;
         
         if (kode === "123456") {  // Simulasi kode verifikasi (gunakan server-side check di produksi)
             alert('Verifikasi Berhasil!');
             document.getElementById('popup-verifikasi').style.display = 'none';
+            window.location.href = "/user/dashboard.html"; 
         } else {
             alert('Kode salah, coba lagi!');
         }

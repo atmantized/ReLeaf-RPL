@@ -70,15 +70,50 @@ header .logo {
     box-shadow: 0 0 15px rgba(0,0,0,0.1); 
   }
 
+ /* Container Styling */
+.form-container-order {
+    background-size: cover;          
+    background-position: center; 
+    max-width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 30px; 
+    border: 1px solid #8dbe77;
+    background-color: #f9f9f9;
+    border-radius: 45px; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Header Flexbox untuk Posisi Avatar & Headline */
+.form-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* Jarak antara avatar dan teks */
+}
+.h1 {
+    display: center;
+}
+
 /* Avatar image */
-.user-avatar {
+.driver-avatar {
     width: 150px;
     height: 150px;
-    max-width: 200px;
     border-radius: 50%;
     border: 5px solid #87ce92;
     margin-bottom: auto;
-    margin-top: 45px;
+    object-fit: cover;
+}
+
+.customer-info, .o/rder-status, {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
 }
 
 /* Header text */
@@ -135,3 +170,5 @@ h1 {
     background-color: #f44336;
     color: white;
 }
+
+

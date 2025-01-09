@@ -1,0 +1,131 @@
+/* BODY STYLING */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('/images/pick.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+/* CONTAINER BESAR */
+.form-container-order {
+    position: relative;
+    max-width: 1000px;
+    height: 700px;
+    margin: 50px auto;
+    margin-top: 10px;
+    position: relative;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 45px;
+    border: 1px solid #8dbe77;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* JUDUL TENGAH ATAS */
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* CONTAINER KECIL DI SEBELAH KIRI ATAS */
+.small-container {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+    gap: 20px; /* Jarak antara customer info dan iframe */
+    width: 100%; /* Memastikan mengambil seluruh lebar container besar */
+    align-items: flex-start; /* Menyelaraskan item ke bagian atas */
+}
+
+/* Iframe (Kanan) */
+.iframe-container {
+    flex: 10; /* Memberikan lebih banyak ruang untuk iframe */
+    max-width: 10000px; /* Atur lebar maksimum untuk iframe */
+    height: 30px; /* Tetapkan tinggi yang sesuai */
+}
+
+
+/* AVATAR */
+.user-avatar {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #87ce92;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/* CUSTOMER INFO */
+.customer-info {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ORDER STATUS DI BAWAH CONTAINER KECIL */
+.order-status {
+    margin-top: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #000000;
+    width: 80%;
+    text-align: left;
+}
+
+/* BUTTON SELESAI DI TENGAH BAWAH */
+.toggle-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #66d478;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+    margin: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #5cbf70;
+}
+
+.toggle-button.off {
+    background-color: rgb(196, 50, 50);
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 15px;
+    background-color: #e5f1e5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}

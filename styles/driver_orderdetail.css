@@ -38,6 +38,18 @@ body {
     color: #333;
 }
 
+/* Logo styling */
+.logo {
+  display: flex;
+  justify-content: center; /* Posisikan logo di tengah */
+}
+
+.logo-img {
+  max-width: 100%; /* Sesuaikan lebar logo */
+  height: auto; /* Menjaga proporsi gambar */
+  max-height: 50px; /* Sesuaikan tinggi logo jika perlu */
+}   
+
 /* CONTAINER KECIL DI SEBELAH KIRI ATAS */
 .small-container {
     position: absolute;

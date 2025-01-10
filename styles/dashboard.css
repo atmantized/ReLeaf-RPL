@@ -67,14 +67,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #333; /* Circle border */
+  border: 2px solid #333; 
   border-radius: 50%;
+  
 }
 
 .user-icon {
-  width: 20px;
-  height: 20px;
-}  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
 
 .carousel {
   display: flex;
@@ -167,12 +171,11 @@ header {
   border-radius: 5px;
 }
 
-
 /* Footer styles */
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* Supaya konten sejajar ke atas */
   padding: 20px;
   background-color: #6da36b;
   color: #ffffff;
@@ -181,6 +184,16 @@ footer {
 footer .footer-left,
 footer .footer-right {
   flex: 1;
+}
+
+footer .footer-left {
+  text-align: left;
+}
+
+footer .footer-logo {
+  width: 90px; /* Sesuaikan ukuran logo */
+  height: auto;
+  margin-bottom: 10px; /* Beri jarak antara logo dan teks */
 }
 
 footer .footer-right {
@@ -192,6 +205,14 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
+footer a img {
+  width: 24px; /* Ukuran ikon media sosial */
+  height: auto;
+  margin: 0 5px; /* Jarak antar ikon */
+}
+
+
 /* Popup Styles */
 .popup {
   display: none;
